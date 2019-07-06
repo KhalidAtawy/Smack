@@ -16,6 +16,7 @@
 		B28A76FC22D0BAA600136048 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B28A76FA22D0BAA500136048 /* SWRevealViewController.m */; };
 		B28A770122D0BE3B00136048 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A770022D0BE3B00136048 /* ChatVC.swift */; };
 		B28A770322D0BEA500136048 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A770222D0BEA500136048 /* ChannelVC.swift */; };
+		B28A770622D0D3C900136048 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A770522D0D3C900136048 /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		B28A76FB22D0BAA600136048 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		B28A770022D0BE3B00136048 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		B28A770222D0BEA500136048 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		B28A770522D0D3C900136048 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		B28A76FE22D0BE1A00136048 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B28A770522D0D3C900136048 /* GradientView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			files = (
 				B28A770122D0BE3B00136048 /* ChatVC.swift in Sources */,
 				B28A76E422D0B6D500136048 /* ViewController.swift in Sources */,
+				B28A770622D0D3C900136048 /* GradientView.swift in Sources */,
 				B28A76E222D0B6D500136048 /* AppDelegate.swift in Sources */,
 				B28A76FC22D0BAA600136048 /* SWRevealViewController.m in Sources */,
 				B28A770322D0BEA500136048 /* ChannelVC.swift in Sources */,
