@@ -14,11 +14,14 @@ class LoginVC: UIViewController {
         super.viewDidLoad()
 
     }
-    
+     
 
     @IBAction func closePressed(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
-
+    @IBAction func createAccountBtnPressed(_ sender: Any) {
+        performSegue(withIdentifier: TO_CREAT_ACCOUNT, sender: nil)
+    }
+    
 }
