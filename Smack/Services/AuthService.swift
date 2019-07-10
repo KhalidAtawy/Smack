@@ -68,7 +68,7 @@ class AuthService {
         let body = ["email" : lowerCaseEmail, "password" : password]
         
         Alamofire.request(URL_LOGIN, method: .post, parameters: body, encoding: JSONEncoding.default, headers: HEADER).responseJSON { (response) in
-            
+           // print(response)
             if response.result.error == nil {
                 
                 if let json = response.result.value as? Dictionary<String, Any> {
