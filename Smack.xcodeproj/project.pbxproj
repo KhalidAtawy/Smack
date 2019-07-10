@@ -22,6 +22,7 @@
 		B28A770922D0EAC500136048 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28A770822D0EAC500136048 /* Constants.swift */; };
 		B29AC13122D215DD002C8D9A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29AC13022D215DD002C8D9A /* LoginVC.swift */; };
 		B29AC13322D2195A002C8D9A /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29AC13222D2195A002C8D9A /* CreateAccountVC.swift */; };
+		B2F26BD722D5E199006E6A4D /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F26BD622D5E198006E6A4D /* UserDataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		B28A770822D0EAC500136048 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B29AC13022D215DD002C8D9A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		B29AC13222D2195A002C8D9A /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		B2F26BD622D5E198006E6A4D /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				B27F0C4F22D3330D00C878E8 /* AuthService.swift */,
+				B2F26BD622D5E198006E6A4D /* UserDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				B28A770622D0D3C900136048 /* GradientView.swift in Sources */,
 				B28A76E222D0B6D500136048 /* AppDelegate.swift in Sources */,
 				B29AC13322D2195A002C8D9A /* CreateAccountVC.swift in Sources */,
+				B2F26BD722D5E199006E6A4D /* UserDataService.swift in Sources */,
 				B203A52A22D36C2B0050EFA6 /* RoundedButton.swift in Sources */,
 				B28A770922D0EAC500136048 /* Constants.swift in Sources */,
 				B27F0C5022D3330D00C878E8 /* AuthService.swift in Sources */,
