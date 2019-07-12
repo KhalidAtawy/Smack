@@ -365,7 +365,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="dw6-yY-KQe">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="dw6-yY-KQe" customClass="CircleImage" customModule="Smack" customModuleProvider="target">
                                 <rect key="frame" x="137.5" y="299" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="Pqy-8j-UDY"/>
@@ -387,6 +387,10 @@
                                     <action selector="pickBGColorPressed:" destination="OSx-7s-jdV" eventType="touchUpInside" id="GKy-yd-c25"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="qOx-VO-Tlc">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -398,10 +402,12 @@
                             <constraint firstItem="WYo-Ui-ZPz" firstAttribute="bottom" secondItem="pB6-m7-3wq" secondAttribute="bottom" constant="20" id="Arl-tn-AQ1"/>
                             <constraint firstItem="rdh-IJ-ekd" firstAttribute="top" secondItem="FvR-Fb-BGo" secondAttribute="bottom" constant="4" id="HMe-4C-dbM"/>
                             <constraint firstItem="sEe-pq-rnc" firstAttribute="top" secondItem="3Xn-gd-W9V" secondAttribute="bottom" constant="40" id="MZc-lU-5ol"/>
+                            <constraint firstItem="qOx-VO-Tlc" firstAttribute="centerY" secondItem="ibh-1Y-DI0" secondAttribute="centerY" constant="-100" id="Rlo-M5-Wbw"/>
                             <constraint firstItem="i3T-zS-47S" firstAttribute="trailing" secondItem="ibh-1Y-DI0" secondAttribute="trailingMargin" id="S27-yu-Yir"/>
                             <constraint firstItem="sEe-pq-rnc" firstAttribute="centerX" secondItem="ibh-1Y-DI0" secondAttribute="centerX" id="TDS-ra-524"/>
                             <constraint firstItem="FvR-Fb-BGo" firstAttribute="width" secondItem="dw6-yY-KQe" secondAttribute="width" id="Vch-MV-s9g"/>
                             <constraint firstItem="dw6-yY-KQe" firstAttribute="top" secondItem="sEe-pq-rnc" secondAttribute="bottom" constant="40" id="a0C-UE-aEE"/>
+                            <constraint firstItem="qOx-VO-Tlc" firstAttribute="centerX" secondItem="ibh-1Y-DI0" secondAttribute="centerX" id="gn3-k1-U4a"/>
                             <constraint firstItem="FvR-Fb-BGo" firstAttribute="centerX" secondItem="ibh-1Y-DI0" secondAttribute="centerX" id="t8Z-vD-bhJ"/>
                             <constraint firstItem="3Xn-gd-W9V" firstAttribute="centerX" secondItem="ibh-1Y-DI0" secondAttribute="centerX" id="teu-kf-iSg"/>
                             <constraint firstItem="3Xn-gd-W9V" firstAttribute="top" secondItem="WYo-Ui-ZPz" secondAttribute="top" constant="40" id="u60-IP-Hg4"/>
@@ -412,6 +418,7 @@
                         <outlet property="emailTxt" destination="cyR-oD-KT1" id="SES-Yw-Tcx"/>
                         <outlet property="passTxt" destination="iSb-ZC-QMx" id="ZWP-ba-m03"/>
                         <outlet property="registerView" destination="ibh-1Y-DI0" id="eEG-gN-d6A"/>
+                        <outlet property="spinner" destination="qOx-VO-Tlc" id="beO-kh-bEm"/>
                         <outlet property="userImg" destination="dw6-yY-KQe" id="tUW-gb-EhW"/>
                         <outlet property="usernameTxt" destination="BxC-25-Xkq" id="cZ9-pQ-XkV"/>
                         <segue destination="81B-mv-jhu" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="Oaf-0U-wvY"/>

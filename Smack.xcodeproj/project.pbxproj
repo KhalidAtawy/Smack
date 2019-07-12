@@ -25,6 +25,7 @@
 		B2F26BD722D5E199006E6A4D /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F26BD622D5E198006E6A4D /* UserDataService.swift */; };
 		B2F53BFF22D6123A00747FD3 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F53BFE22D6123A00747FD3 /* AvatarPickerVC.swift */; };
 		B2F53C0122D6168000747FD3 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F53C0022D6168000747FD3 /* AvatarCell.swift */; };
+		B2F53C0322D6313500747FD3 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F53C0222D6313500747FD3 /* CircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		B2F26BD622D5E198006E6A4D /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
 		B2F53BFE22D6123A00747FD3 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
 		B2F53C0022D6168000747FD3 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
+		B2F53C0222D6313500747FD3 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				B203A52922D36C2B0050EFA6 /* RoundedButton.swift */,
 				B28A770522D0D3C900136048 /* GradientView.swift */,
 				B2F53C0022D6168000747FD3 /* AvatarCell.swift */,
+				B2F53C0222D6313500747FD3 /* CircleImage.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				B28A76FC22D0BAA600136048 /* SWRevealViewController.m in Sources */,
 				B28A770322D0BEA500136048 /* ChannelVC.swift in Sources */,
 				B2F53BFF22D6123A00747FD3 /* AvatarPickerVC.swift in Sources */,
+				B2F53C0322D6313500747FD3 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
