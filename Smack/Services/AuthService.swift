@@ -88,6 +88,7 @@ class AuthService {
 //                } catch let error as NSError {
 //                    print(error)
 //                }
+                self.isLoggedIn = true
                 completion(true)
             } else {
                 completion(false)
