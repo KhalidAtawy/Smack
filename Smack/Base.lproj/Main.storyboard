@@ -74,7 +74,7 @@
                                 <rect key="frame" x="0.0" y="125.5" width="375" height="426.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="l1Q-oS-GtN">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="channelCell" id="l1Q-oS-GtN" customClass="ChannelCell" customModule="Smack" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l1Q-oS-GtN" id="nDZ-n7-WXq">
@@ -94,6 +94,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="channelName" destination="drF-0S-xc3" id="qq1-xK-sF8"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -119,6 +122,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="8l7-tq-otZ" id="6GN-2J-mJd"/>
+                        <outlet property="tableView" destination="ZXd-jj-keh" id="V14-WU-yhu"/>
                         <outlet property="userImg" destination="Eu5-4U-vHT" id="OOD-zz-gkf"/>
                         <segue destination="tUW-Hi-V0J" kind="show" identifier="toLogin" id="0lV-mi-a3t"/>
                     </connections>
@@ -165,6 +169,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginPressed:" destination="tUW-Hi-V0J" eventType="touchUpInside" id="CSF-vH-ncu"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Hws-d1-7eu">
                                 <rect key="frame" x="126.5" y="80" width="122.5" height="40"/>
@@ -230,6 +237,10 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="80k-sY-BLI">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -242,11 +253,16 @@
                             <constraint firstItem="kGr-z1-Ogn" firstAttribute="top" secondItem="iIT-BD-dJG" secondAttribute="top" constant="8" id="alw-BE-Af0"/>
                             <constraint firstItem="PAT-TR-Edn" firstAttribute="top" secondItem="2qP-dk-GmP" secondAttribute="bottom" id="dIF-LK-mpS"/>
                             <constraint firstItem="t7Q-Vz-LLA" firstAttribute="top" secondItem="Hws-d1-7eu" secondAttribute="bottom" constant="40" id="ic7-05-JNw"/>
+                            <constraint firstItem="80k-sY-BLI" firstAttribute="centerY" secondItem="xax-mp-GMa" secondAttribute="centerY" constant="-100" id="vxi-8I-yEl"/>
                             <constraint firstItem="2qP-dk-GmP" firstAttribute="top" secondItem="t7Q-Vz-LLA" secondAttribute="bottom" constant="40" id="wYF-i2-uE9"/>
+                            <constraint firstItem="80k-sY-BLI" firstAttribute="centerX" secondItem="xax-mp-GMa" secondAttribute="centerX" id="xo0-tv-0oS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iIT-BD-dJG"/>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="lC8-kw-fcf" id="ctV-Ee-lIf"/>
+                        <outlet property="spinner" destination="80k-sY-BLI" id="CfY-er-zSY"/>
+                        <outlet property="usernameTxt" destination="3ig-II-kzx" id="6gf-cm-qBP"/>
                         <segue destination="OSx-7s-jdV" kind="show" identifier="toCreatAccount" id="tkB-S5-KkE"/>
                     </connections>
                 </viewController>
