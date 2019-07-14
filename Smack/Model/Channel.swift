@@ -14,3 +14,5 @@ struct Channel : Decodable {
     public private(set) var channelDescription: String!
     public private(set) var id: String!
 }
+
+
