@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5EA2EA278251B2A97F9DC9E9 /* Pods_Smack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18B8B6080767F1E081A77353 /* Pods_Smack.framework */; };
 		B203A52A22D36C2B0050EFA6 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B203A52922D36C2B0050EFA6 /* RoundedButton.swift */; };
+		B26A855122DC676200A82EFC /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26A855022DC676200A82EFC /* Message.swift */; };
 		B27F0C5022D3330D00C878E8 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27F0C4F22D3330D00C878E8 /* AuthService.swift */; };
 		B27F39DC22D9EF22003E5444 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27F39DA22D9EF22003E5444 /* ProfileVC.swift */; };
 		B27F39DD22D9EF22003E5444 /* ProfileVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = B27F39DB22D9EF22003E5444 /* ProfileVC.xib */; };
@@ -41,6 +42,7 @@
 		1DE65990F6DF2BF41D6338F5 /* Pods-Smack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.release.xcconfig"; sourceTree = "<group>"; };
 		54B0606E17F3B02CBB01FA56 /* Pods-Smack.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smack.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Smack/Pods-Smack.debug.xcconfig"; sourceTree = "<group>"; };
 		B203A52922D36C2B0050EFA6 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		B26A855022DC676200A82EFC /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		B27F0C4F22D3330D00C878E8 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		B27F39DA22D9EF22003E5444 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		B27F39DB22D9EF22003E5444 /* ProfileVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileVC.xib; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				B2D6A39B22DB1D8A007DE13E /* Channel.swift */,
+				B26A855022DC676200A82EFC /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				B2A2F4C422DB51BF007D0828 /* SocketService.swift in Sources */,
 				B2D6A39E22DB1E4E007DE13E /* MessageService.swift in Sources */,
 				B28A76FC22D0BAA600136048 /* SWRevealViewController.m in Sources */,
+				B26A855122DC676200A82EFC /* Message.swift in Sources */,
 				B2A2F4C122DB391E007D0828 /* AddChannelVC.swift in Sources */,
 				B28A770322D0BEA500136048 /* ChannelVC.swift in Sources */,
 				B2F53BFF22D6123A00747FD3 /* AvatarPickerVC.swift in Sources */,
