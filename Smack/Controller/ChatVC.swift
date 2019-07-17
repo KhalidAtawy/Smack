@@ -48,6 +48,17 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         NotificationCenter.default.addObserver(self, selector: #selector(ChatVC.channelSelected(_:)), name: NOTIF_CHANNEL_SELECTED, object: nil)
         
+        
+        SocketService.instance.getChatMessage { (success) in
+            if success {
+                self.tableView.reloadData()
+                if MessageService.instance.messages.count > 0 {
+                    let endIndex = IndexPath(row: MessageService.instance.messages.count - 1, section: 0)
+                    self.tableView.scrollToRow(at: endIndex, at: .bottom, animated: false)
+                }
+            }
+        }
+
 
         SocketService.instance.getTypingUsers { (typingUsers) in
             guard let channelId = MessageService.instance.selectedChannel?.id else { return }
@@ -128,15 +139,17 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             isTyping = false
             sendBtn.isHidden = true
             SocketService.instance.socket.emit("stopType", UserDataService.instance.name, channelId)
+            
+            print("-------1-------->\(isTyping)")
         } else {
             if isTyping == false {
                 sendBtn.isHidden = false
                 SocketService.instance.socket.emit("startType", UserDataService.instance.name, channelId)
+                print("--------2------->\(isTyping)")
             }
             isTyping = true
         }
     }
-    
     
     @IBAction func sendMsgPressed(_ sender: Any) {
         if AuthService.instance.isLoggedIn && messageTxtBox.text != "" {
@@ -146,10 +159,11 @@ class ChatVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             SocketService.instance.addMessage(messageBody: message, userId: UserDataService.instance.id, channelId: channelId) { (success) in
                 if success {
                     self.messageTxtBox.text = ""
-                    self.sendBtn.isHidden = true
                    // self.view.endEditing(true)
-                   // self.messageTxtBox.resignFirstResponder()
+                    self.messageTxtBox.resignFirstResponder()
                     SocketService.instance.socket.emit("stopType", UserDataService.instance.name, channelId)
+                    self.sendBtn.isHidden = true
+                    self.isTyping = false
                 }
             }
         }
